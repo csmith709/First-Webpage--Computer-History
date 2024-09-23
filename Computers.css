@@ -1,0 +1,157 @@
+/*written ny Charity Smith*/
+/*History of Computers Webpage*/
+
+body {
+    background-color: slategray;
+  }
+  
+.mainbox {
+    width: 1000px;
+    background-color: white;
+    padding: 30px;
+    border: 3px solid lime;
+    text-align: left;
+  }
+
+  /*maintext*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arial Black";
+  color: blue;
+  font-weight: 700;
+}
+p {
+  font-family: Helvetica;
+  color: black;
+  line-height: 115%;
+}
+
+blockquote {
+  font-family: Times;
+  color: black;
+  font-style: italic;
+}
+/*links*/
+/*nav*/
+.nav a:link {
+  color: rgb(69, 69, 224);
+  font-size: 18pt;
+}
+.nav a:visited {
+  color: black;
+  text-decoration: underline;
+  font-size: 18pt;
+}
+.nav a:hover {
+  background-color: slategray;
+  color: #00ff00;
+  font-weight: 700;
+  font-size: 18pt;
+}
+/*main*/
+a:link {
+  color: blue;
+  font-size: 12pt;
+}
+a:visited {
+  color: #fb0094;
+  font-size: 12pt;
+}
+
+a:hover {
+  text-decoration: solid;
+  text-decoration: underline;
+  color: #01ae01;
+  font-weight: 700;
+  font-size: 12pt;
+}
+/*footer*/
+.footer a:link {
+  color: white;
+  font-size: 12pt;
+}
+.footer a:visited {
+  color: #00ff00;
+  text-decoration: underline;
+  font-size: 12pt;
+}
+.footer a:hover {
+  background-color: slategray;
+  color: #ffff00;
+  font-weight: 700;
+  font-size: 12pt;
+}
+
+/*glow block*/
+.block {
+  position: relative;
+  margin: 40px auto 0;
+  width: 605px;
+  height: 56px;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
+
+/*text/photo classes*/
+.greenimgborder {
+  border: 3px limegreen;
+  border-style:double;
+}
+.yearbold {
+  font-weight: 800;
+  font-size: 14pt;
+}
+.italsmall {
+  font-style: italic;
+  font-size: 10pt;
+  color: navy;
+}
+.firstcharacter {
+  color: #01ae01;
+  float: left;
+  font-family: Georgia;
+  font-size: 52px;
+  padding-top: 11px;
+  padding-right: 6px;
+  padding-left: 3px;
+}
+/*scroll bar attempt*/
+.scrollblock {
+  width: 750px;
+  height: 100px;
+  margin: 5px;
+  text-align: center;
+  overflow: scroll;
+  scrollbar-color: blue lime green;
+  scrollbar-width: thin;
+  padding:10px;
+  background-color: rgb(143, 249, 143);
+}
